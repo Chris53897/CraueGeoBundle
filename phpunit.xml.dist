@@ -15,13 +15,6 @@
 
 	<php>
 		<env name="SHELL_VERBOSITY" value="-1" />
-		<!--
-		<env name="CACHE_DIR" value="/path/to/your/cache/" />
-		<env name="LOG_DIR" value="/path/to/your/log/" />
-		-->
 	</php>
-	<listeners>
 
-		<listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
-	</listeners>
 </phpunit>

@@ -29,7 +29,7 @@ class DisablePostalCodeEntityTest extends IntegrationTestCase {
 		 *   Class "Craue\GeoBundle\Entity\GeoPostalCode" sub class of "" is not a valid entity or mapped super class.
 		 * here, so just verify the relevant parts of the message. This has been fixed in ORM 2.3.1.
 		 */
-		$this->expectExceptionMessageMatches(sprintf('/^%s.*%s$/s', preg_quote('Class "Craue\GeoBundle\Entity\GeoPostalCode"'), preg_quote('is not a valid entity or mapped super class.')));
+		$this->expectExceptionMessageMatches(sprintf('/^%s.*%s$/s', preg_quote('Class "Craue\GeoBundle\Entity\GeoPostalCode"', null), preg_quote('is not a valid entity or mapped super class.', null)));
 
 		$this->getRepo();
 	}
