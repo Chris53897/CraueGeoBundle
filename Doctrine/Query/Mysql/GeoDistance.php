@@ -19,7 +19,7 @@ use Doctrine\ORM\Query\SqlWalker;
  */
 class GeoDistance extends FunctionNode {
 
-	public const EARTH_DIAMETER = 12742; // 2 * Earth's radius (6371 km)
+	public const int EARTH_DIAMETER = 12742; // 2 * Earth's radius (6371 km)
 
 	protected ArithmeticExpression $latOrigin;
 	protected ArithmeticExpression $lngOrigin;
