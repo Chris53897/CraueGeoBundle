@@ -39,7 +39,7 @@ abstract class IntegrationTestCase extends WebTestCase {
 	 * @param string $baseConfig The base config filename.
 	 * @return array<int, array<int, mixed>>
 	 */
-	public static function getPlatformConfigs(string $testName, string $baseConfig = 'config.yml'): array
+	public static function getPlatformConfigs(string $testName="test", string $baseConfig = 'config.yml'): array
     {
 		$testData = [];
 
